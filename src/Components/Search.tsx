@@ -1,8 +1,6 @@
-import { SetStateAction, useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
-import { Card, Carousel, Col, Container, Row } from "react-bootstrap";
-import Image from 'react-bootstrap/Image';
+import { Card } from "react-bootstrap";
 
 function Search(){
     const [name , setName] = useState("Sports Highlights");
@@ -120,6 +118,7 @@ function Search(){
     return(
         <body className=' bg-black ' >
         <div>
+            <h2></h2>
 
 
 

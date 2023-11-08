@@ -1,9 +1,5 @@
-import { useState } from 'react'
 import './App.css'
-import Sidebar from './Sidebar';
 import Search from './Components/Search';
-import { Button, Col } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image';
 import profile from './assets/profile.png';
 
 function App() {
