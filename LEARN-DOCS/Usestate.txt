@@ -1,0 +1,44 @@
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+  const [name , setName] = useState('Your Name' || null);
+
+  const changename = (event: React.MouseEvent<HTMLElement>) => {
+    event.preventDefault();
+
+   const newname =  document.getElementById('name' || null)
+
+    console.log(event.target);
+    setName(newname)
+  }
+
+
+  return (
+    <>
+
+      <h1>Vite + React</h1>
+      <h1 className="text-3xl font-bold underline hover:bg-orange-600">Hello world!</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 3)}>
+          count is {count}
+        </button>
+      </div>
+      <div>
+        <h2>{name}</h2>
+        <form>
+        <h2 id='name' ></h2>
+
+         <button type='submit'  onClick={(changename) }> Change </button>
+
+        </form>
+
+      </div>
+
+
+    </>
+  )
+}
+
+export default App
